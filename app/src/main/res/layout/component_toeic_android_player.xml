@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/component_toeic_android_player_btn_play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:padding="5dp"
+        android:src="@drawable/player_01"/>
+
+    <TextView
+        android:id="@+id/component_toeic_android_player_current_time"
+        android:layout_toEndOf="@id/component_toeic_android_player_btn_play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:text="00:00" />
+
+    <SeekBar
+        android:id="@+id/component_toeic_android_player_seek_bar"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/component_toeic_android_player_current_time"
+        android:layout_toStartOf="@id/component_toeic_android_player_total_time"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/component_toeic_android_player_total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:text="00:00"/>
+
+</RelativeLayout>
